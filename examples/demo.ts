@@ -14,7 +14,7 @@ async function main() {
     if (found && found.status === 'completed') {
       break;
     }
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 1));
   }
 
   const searchResults = await client.files.fileSearch(file.file_id!, {
